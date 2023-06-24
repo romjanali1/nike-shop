@@ -30,7 +30,10 @@ function App() {
         },
 
         {
-          path: 'products', element: <Products></Products>
+          path: 'products',
+          loader: () => fetch('Data.json') ,
+           element: <Products></Products>
+          
         },
 
         {
